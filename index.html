@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="icon" href="PHOTO/cover.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Madam Jii ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <button id="musicBtn" onclick="toggleMusic()">
+    🔊 Music On
+    </button>
+ <img src="PHOTO/p1.jpg" class="corner-photo c1">
+ <img src="PHOTO/p3.jpg" class="corner-photo c2">
+ <img src="PHOTO/p5.jpg" class="corner-photo c3">
+ <img src="PHOTO/p7.jpg" class="corner-photo c4">
+ <img src="PHOTO/p9.jpg" class="corner-photo c5">
+ <img src="PHOTO/p11.jpg" class="corner-photo c6">
+ <img src="PHOTO/p13.jpg" class="corner-photo c7">
+ <img src="PHOTO/p15.jpg" class="corner-photo c8">
+ <img src="PHOTO/p17.jpg" class="corner-photo c9">
+ <img src="PHOTO/p18.jpg" class="corner-photo c10">
+ <div class="heart">❤️</div>
+ <div class="heart h2">💖</div>
+ <div class="heart h3">💕</div>
+ <div class="heart h4">💗</div>
+ <div class="heart h5">💞</div>
+ <div class="heart h6">🌸</div>
+ <div class="heart h7">✨</div>
+ <div class="heart h8">🎀</div>
+ <audio id="bgMusic" loop>
+    <source src="music/night_changes.mp3" type="audio/mpeg">
+</audio>
+
+<div class="hearts"></div>
+
+<section id="page1" class="page active">
+    <h1>💖 Madam Jii 💖</h1>
+    <p>A little surprise is waiting... </p>
+    </p>(PASSWORD HINT - YOUR 4 digit DATE) </p>
+   
+
+    <input type="password"
+           id="password"
+           placeholder="Enter Secret Code">
+
+    <button onclick="checkPassword()">
+        Unlock ❤️
+    </button>
+
+    <p id="error"></p>
+</section>
+
+<section id="page2" class="page">
+    <h1>Access Granted ❤️</h1>
+    <p>Welcome Madam Jii...</p>
+</section>
+
+<section id="page3" class="page">
+    <h1>Happyiest Birthday ❤️</h1>
+
+    <h2>🤩 ALAKH 🥳</h2>
+
+    <img src="PHOTO/cover.jpg" class="cover">
+
+    <p>
+        ✨ 22 Looks Beautiful On You 💫
+    </p>
+
+    <button onclick="showPage(4)">
+        Continue →
+    </button>
+</section>
+
+<section id="page4" class="page">
+
+    <h1>🎂 Make A Wish</h1>
+
+    <div class="cake">
+        🎂
+    </div>
+
+    <p>
+        Close your eyes...
+        <br>
+        Make a wish...
+        <br>
+        and smile 🌸
+    </p>
+
+    <button onclick="showPage(5)">
+        My Wish Is Ready ❤️
+    </button>
+
+</section>
+
+<section id="page5" class="page">
+
+    <h1>✨ Wish Granted 💫</h1>
+
+    <p>
+
+    I don't know what you wished for...
+
+    <br><br>
+
+    But I hope every dream,
+    every goal,
+    and every little wish
+    in your heart comes true. 💫❤️
+
+    <br><br>
+
+    No matter how old you get,
+    you'll always be my Dearest
+    Madam Jii. 😌❤️🫂
+
+    <br><br>
+
+    Before we continue...
+
+    let's take a look at some
+    beautiful memories 🌸
+
+    </p>
+
+    <div>
+
+    <button onclick="showPage(4)">
+        ← Previous
+    </button>
+
+    <button onclick="showPage(6)">
+        Open Memories 📸
+    </button>
+
+    </div>
+
+</section>
+
+<section id="page6" class="page">
+
+    <h1>📸 Beautiful Memories</h1>
+
+    <p>
+    Every picture here made me smile 🌸
+    </p>
+
+    <button onclick="toggleMemory('m1')">
+    🌸 A Beautiful Smile
+    </button>
+
+    <p class="memory-note">
+    One of my favorite smiles ❤️
+    </p>
+
+    <div id="m1" class="memory">
+
+    <img src="PHOTO/p1.jpg">
+    <img src="PHOTO/p2.jpg">
+    <img src="PHOTO/p3.jpg">
+
+    </div>
+
+    <br>
+
+    <button onclick="toggleMemory('m2')">
+    ✨ Little Moments
+    </button>
+
+    <p style="font-size:18px;">
+    Some moments deserve to be remembered forever 🌷
+    </p>
+
+    <div id="m2" class="memory">
+
+    <img src="PHOTO/p6.jpg">
+    <img src="PHOTO/p5.jpg">
+    <img src="PHOTO/p4.jpg">
+
+    </div>
+
+    <br><br>
+
+    <div>
+
+    <button onclick="showPage(5)">
+    ← Previous
+    </button>
+
+    <button onclick="showPage(7)">
+    Next →
+    </button>
+
+    </div>
+
+</section>
+
+<section id="page7" class="page">
+
+    <h1>🌸 More Smile And Beautiful Moments</h1>
+
+    <p>
+    Every smile tells a story 🌷
+    </p>
+
+    <button onclick="toggleMemory('m3')">
+    💖 Precious Memories
+    </button>
+
+    <p style="font-size:18px;">
+    A few pictures that always make me smile ❤️
+    </p>
+
+    <div id="m3" class="memory">
+
+    <img src="PHOTO/p7.jpg">
+    <img src="PHOTO/p8.jpg">
+    <img src="PHOTO/p9.jpg">
+
+    </div>
+
+    <br>
+
+    <button onclick="toggleMemory('m4')">
+    📸 Picture Perfect
+    </button>
+
+    <p style="font-size:18px;">
+    Every photo tells a beautiful story ✨
+    </p>
+
+    <div id="m4" class="memory">
+
+    <img src="PHOTO/p10.jpg">
+    <img src="PHOTO/p11.jpg">
+    <img src="PHOTO/p12.jpg">
+
+    </div>
+
+    <br><br>
+
+    <div>
+
+    <button onclick="showPage(6)">
+    ← Previous
+    </button>
+
+    <button onclick="showPage(8)">
+    Next →
+    </button>
+
+    </div>
+
+</section>
+
+<section id="page8" class="page">
+
+    <h1>✨ Little Moments</h1>
+
+    <p>
+    Some memories are small,
+    but they stay in our hearts forever ❤️
+    </p>
+
+    <button onclick="toggleMemory('m5')">
+    🌷 Favorite Clicks
+    </button>
+
+    <p style="font-size:18px;">
+    Some of my favorite pictures of you ❤️
+    </p> 
+
+    <div id="m5" class="memory">
+
+    <img src="PHOTO/p13.jpg">
+    <img src="PHOTO/p14.jpg">
+    <img src="PHOTO/p15.jpg">
+
+    </div>
+
+    <div style="height:30px;"></div>
+
+    <button onclick="toggleMemory('m6')">
+    💫 Forever Memories
+    </button>
+
+    <p style="font-size:18px;">
+    The kind of moments that stay in the heart forever 🌸
+    </p>
+
+    <div id="m6" class="memory">
+
+    <img src="PHOTO/p16.jpg">
+    <img src="PHOTO/p17.jpg">
+    <img src="PHOTO/p18.jpg">
+
+    </div>
+
+    <br><br>
+
+    <div>
+
+    <button onclick="showPage(7)">
+    ← Previous
+    </button>
+
+    <button onclick="showPage(9)">
+    Next →
+    </button>
+
+    </div>
+
+</section>
+
+<section id="page9" class="page">
+
+    <h1>💫 If I Had One Wish...</h1>
+
+    <p>
+
+    If I had one wish today,
+
+    it wouldn't be for money.😁
+
+    <br><br>
+
+    It wouldn't be for success.😙
+
+    <br><br>
+
+    It would simply be to see
+    you happy,
+    smiling,<br>
+    and enjoying every moment
+    of your life. ❤️💫🥰
+
+    <br><br>
+
+    And Always Remember
+    You are stronger than you think.💪🏻
+
+    <br><br>
+
+    You are prettier than you believe.🤩
+
+    <br><br>
+
+    And you are more loved
+    than you realize. ❤️😘
+
+    </p>
+
+    <div>
+
+    <button onclick="showPage(8)">
+     ← Previous
+    </button>
+
+    <button onclick="showPage(10)">
+    One Last Thing 💌
+    </button>
+
+    </div>
+
+</section>
+
+<section id="page10" class="page">
+
+    <h1>💌 One Last Thing...</h1>
+
+    <img src="STICKER/1 heart (1).png" class="sticker st1">
+    <img src="STICKER/2 flower.png" class="sticker st2">
+    <img src="STICKER/4 ribbon.png" class="sticker st3">
+
+    <div class="envelope"
+         onclick="showPage(11)">
+
+        💌
+
+    </div>
+
+    <p>
+
+    Tap the envelope ❤️
+
+    </p>
+
+    <div>
+
+        <button onclick="showPage(9)">
+            ← Previous
+        </button>
+
+    </div>
+
+</section>
+
+<div class="confetti">🎉</div>
+<div class="confetti c11">✨</div>
+<div class="confetti c12">🌸</div>
+<div class="confetti c13">💖</div>
+<div class="confetti c14">🎀</div>
+<div class="confetti c15">❤️</div>
+<div class="confetti c16">⭐</div>
+<div class="confetti c17">💝</div>
+
+<section id="page11" class="page">
+    
+
+    <h1>Happy Birthday my Dearest Madamjii❤️</h1>
+
+    <img src="STICKER/1 heart.png" class="sticker st4">
+    <img src="STICKER/rock-star.png" class="sticker st5">
+    <img src="STICKER/3 moon.png" class="sticker st6">
+
+    <img src="STICKER/1 panda.png" class="sticker st7">
+    <img src="STICKER/2 bouquet.png" class="sticker st8">
+    <img src="STICKER/4 aarrow.png" class="sticker st9">
+
+    <p>
+
+    I tried to make
+    something new that could
+    make you smile today. 😁
+
+    <br><br>
+
+    Wishing you happiness,
+    success, good health,<br>
+    countless beautiful
+    memories this year (WITH ME),<br>
+    AND most imp. everything
+    you dreamed of,<br>
+    you will conquer
+    the world my madamjiiii. 😘❤️
+
+    <br><br>
+
+    Keep smiling, keep shining,
+    and keep being<br>
+    the wonderful ,best ,lovely person
+    you are. 🌹
+
+    <br><br>
+
+    And remember, I'm always with you
+    in any situation,<br>
+    I'm not letting 
+    you go easily, YOU ARE MINE, haha😂<br>
+    And you'll always have a 
+    special place in my heart. ❤️💫
+
+    <br><br>
+
+    HAPPIEST BIRTHDAY TO YOU ALAKH (Madamjiiii)🥳💫
+
+    </p>
+
+    <p>
+
+    ❤️ Thank You For Opening This ❤️
+
+    </p>
+    <br>
+    <h2>
+
+    — From Manan 😎
+
+    </h2>
+
+    <div>
+
+    <button onclick="showPage(10)">
+    ← Previous
+    </button>
+
+    <button onclick="showPage(12)">
+    Watch Videos 🎥
+    </button>
+
+    </div>
+
+</section>
+
+<section id="page12" class="page">
+
+    <h1>🎥 A Little Surprise ❤️</h1>
+
+    <p>
+    Before we finish...
+    there's something I want you to watch 🌸
+    </p>
+
+    <video id="video1" class="birthday-video" controls>
+        <source src="VIDEO/video_1.mp4"
+                type="video/mp4">
+
+    </video>
+
+    <br><br>
+
+    <button onclick="showPage(11)">
+    ← Previous
+    </button>
+
+    <button onclick="showPage(13)">
+    Next →
+    </button>
+
+</section>
+
+<section id="page13" class="page">
+
+    <h1>🎬 One More Thing ❤️</h1>
+
+    <p>
+    Just one last video before we finish ✨
+    </p>
+
+    <video id="video2" class="birthday-video" controls>
+
+        <source src="VIDEO/video_2.mp4"
+                type="video/mp4">
+
+    </video>
+
+    <br><br>
+
+    <button onclick="showPage(12)">
+    ← Previous
+    </button>
+
+    <button onclick="showPage(14)">
+    Final Page ❤️
+    </button>
+
+</section>
+
+<section id="page14" class="page">
+
+    <h1>❤️ Thank You ❤️</h1>
+
+    <p>
+
+    If you've reached here...
+
+    thank you for spending a little
+    part of your birthday with me. 🌹
+
+    <br><br>
+
+    I hope this made you smile,
+    even if only for a moment. ❤️
+
+    </p>
+
+    <br><br>
+
+    <h2>
+    — Manan ✨
+    </h2>
+
+    <button onclick="showPage(13)">
+    ← Previous
+    </button>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
