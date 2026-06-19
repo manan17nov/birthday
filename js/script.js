@@ -1,7 +1,7 @@
 function showPage(pageNumber){
 
     const v1 = document.getElementById("video_1");
-    const v2 = document.getElementById("video_2");
+    const v2 = document.getElementById("video2");
 
     if(pageNumber !== 12 && v1){
     v1.pause();
@@ -15,13 +15,9 @@ function showPage(pageNumber){
     v2.load();
     }
 
-    document.querySelectorAll("video").forEach(v => {
-
-    v.pause();
-
-    v.removeAttribute("src");
-
-    v.load();
+    document.querySelectorAll("video").forEach(video => {
+    video.pause();
+    video.currentTime = 0;
     });
 
     const music =
