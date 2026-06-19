@@ -10,16 +10,14 @@ function showPage(pageNumber){
 
         v1.pause();
 
-        v1.currentTime =
-        v1.currentTime;
+        v1.currentTime = 0;
     }
 
     if(v2){
 
         v2.pause();
 
-        v2.currentTime =
-        v2.currentTime;
+        v2.currentTime = 0;
     }
 
     const music =
