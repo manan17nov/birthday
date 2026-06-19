@@ -1,7 +1,7 @@
 function showPage(pageNumber){
 
     const v1 = document.getElementById("video_1");
-    const v2 = document.getElementById("video2");
+    const v2 = document.getElementById("video_2");
 
     if(pageNumber !== 12 && v1){
     v1.pause();
@@ -24,7 +24,7 @@ function showPage(pageNumber){
     document.getElementById("bgMusic");
 
     if(pageNumber >= 12){
-s
+
         music.pause();
 
     }else{
