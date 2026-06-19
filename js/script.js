@@ -1,24 +1,24 @@
 function showPage(pageNumber){
 
-    const v1 =
-    document.getElementById("video1");
+    const v1 = document.getElementById("video1");
+    const v2 = document.getElementById("video2");
 
-    const v2 =
-    document.getElementById("video2");
-
-    if(v1){
-
-        v1.pause();
-
-        v1.currentTime = 0;
+    if(pageNumber !== 12 && v1){
+    v1.pause();
+    v1.currentTime = 0;
+    v1.load();
     }
 
-    if(v2){
-
-        v2.pause();
-
-        v2.currentTime = 0;
+    if(pageNumber !== 13 && v2){
+    v2.pause();
+    v2.currentTime = 0;
+    v2.load();
     }
+
+    document.querySelectorAll("video").forEach(video => {
+    video.pause();
+    video.currentTime = 0;
+    });
 
     const music =
     document.getElementById("bgMusic");
