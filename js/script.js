@@ -15,9 +15,13 @@ function showPage(pageNumber){
     v2.load();
     }
 
-    document.querySelectorAll("video").forEach(video => {
-    video.pause();
-    video.currentTime = 0;
+    document.querySelectorAll("video").forEach(v => {
+
+    v.pause();
+
+    v.removeAttribute("src");
+
+    v.load();
     });
 
     const music =
