@@ -1,37 +1,5 @@
 function showPage(pageNumber){
 
-    const v1 = document.getElementById("video_1");
-    const v2 = document.getElementById("video_2");
-
-    if(pageNumber !== 12 && v1){
-    v1.pause();
-    v1.currentTime = 0;
-    v1.load();
-    }
-
-    if(pageNumber !== 13 && v2){
-    v2.pause();
-    v2.currentTime = 0;
-    v2.load();
-    }
-
-    document.querySelectorAll("video").forEach(video => {
-    video.pause();
-    video.currentTime = 0;
-    });
-
-    const music =
-    document.getElementById("bgMusic");
-
-    if(pageNumber >= 12){
-
-        music.pause();
-
-    }else{
-
-        music.play();
-    }
-
     document
     .querySelectorAll('.page')
     .forEach(page=>{
@@ -39,9 +7,7 @@ function showPage(pageNumber){
     });
 
     document
-    .getElementById(
-        'page'+pageNumber
-    )
+    .getElementById('page'+pageNumber)
     .classList.add('active');
 }
 
