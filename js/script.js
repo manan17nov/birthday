@@ -1,7 +1,5 @@
 function showPage(pageNumber){
 
-    alert("showPage works: " + pageNumber);
-
     const music = document.getElementById("bgMusic");
 
     if(music){
@@ -11,7 +9,7 @@ function showPage(pageNumber){
             music.play();
         }
     }
-    
+
     document
     .querySelectorAll('.page')
     .forEach(page=>{
