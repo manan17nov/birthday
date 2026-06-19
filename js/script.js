@@ -1,5 +1,7 @@
 function showPage(pageNumber){
 
+    alert("showPage works: " + pageNumber);
+
     document
     .querySelectorAll('.page')
     .forEach(page=>{
