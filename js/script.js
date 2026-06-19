@@ -2,6 +2,16 @@ function showPage(pageNumber){
 
     alert("showPage works: " + pageNumber);
 
+    const music = document.getElementById("bgMusic");
+
+    if(music){
+        if(pageNumber === 12 || pageNumber === 13){
+            music.pause();
+        }else{
+            music.play();
+        }
+    }
+    
     document
     .querySelectorAll('.page')
     .forEach(page=>{
